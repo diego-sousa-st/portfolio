@@ -1,13 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { BaseComponent } from '../base.component';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
 	selector: 'app-mapa',
-	templateUrl: './mapa.component.html',
+	templateUrl: './mapa.component.pug',
 	styleUrls: ['./mapa.component.sass']
 })
-export class MapaComponent implements OnInit {
+export class MapaComponent extends BaseComponent implements OnInit {
 
-	constructor() { }
+	constructor(translate: TranslateService) {
+		super(translate);
+	}
 
 	ngOnInit() {
 	}

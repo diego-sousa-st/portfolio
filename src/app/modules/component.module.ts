@@ -1,14 +1,17 @@
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MapaComponent } from './mapa.component';
+import { NavbarModule } from './navbar/navbar.module';
+
+
 
 @NgModule({
-	declarations: [MapaComponent],
+	declarations: [],
 	imports: [
-		CommonModule
+		CommonModule,
+		NavbarModule
 	],
 	exports: [
-		MapaComponent
+		NavbarModule
 	]
 })
-export class MapaModule { }
+export class ComponentModule { }
